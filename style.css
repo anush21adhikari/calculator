@@ -1,0 +1,224 @@
+.container{
+    display: flex;
+    height: 90vh;
+   
+  
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inside-flex{
+   
+     height: 640px;
+     background-color: #4c5156;
+   
+    width: 380px; 
+    
+    margin: 10px;
+    /* border: 1px solid black; */
+    border-top-right-radius: 70px 10px;
+    border-top-left-radius: 70px 10px;
+    border-bottom-right-radius: 70px 10px;
+    border-bottom-left-radius: 70px 10px;
+   
+    box-shadow: 3px 3px #474c51 inset  ;
+}
+
+
+.screen{
+    position: relative;
+ 
+}
+#calScreen{
+  outline: none;
+margin:150px 20px 10px;
+border:4px solid #3f4447;
+/* background-color: #919ea9; */
+background-color: rgb(127, 125, 125) ;
+width: 310px;
+height: 80px;
+padding-left: 20px;
+letter-spacing: 2px;
+color: black;
+opacity: 80%;
+font-size: 20px;
+transform: none !important;
+
+}
+.row{
+   position: relative;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 15px;
+}
+
+.lens{
+    border: 3px solid #595f5f;
+    position: absolute;
+    background-color: #767e83;
+    height: 35px;
+    width: 100px;
+    top:30px;
+    right: 40px;
+    border-radius: 5px;
+}
+.txtLens{
+    position: absolute;
+    top:65px;
+    right: 53px;
+    color: aliceblue;
+    font-size: 9px;
+    font-family: sans-serif;
+}
+.sc{
+    position: absolute;
+    top:112px;
+    left: 27px;
+    color: aliceblue;
+    font-size: 9px;
+    font-family: sans-serif;
+}
+
+.logo{
+    position: absolute;
+    top:-10px;
+    left: 30px;
+    color: aliceblue;
+    font-size: 47px;
+}
+.up{
+    width: 45px;
+    text-align: center;
+    height: 24px;
+    background-color: #44494c;
+
+}
+.rtp{
+    width: 40px;
+    text-align: center;
+    height: 20px;
+    border-top-right-radius: 100%;
+    background-color: #5f676c;
+}
+.ltp{
+    width: 40px;
+    text-align: center;
+    height: 20px;
+    border-top-left-radius: 100%;
+    background-color: #5f676c;
+}
+
+.tp{
+    width: 40px;
+    text-align: center;
+    height: 20px;
+    border-radius: 45%;
+    background-color: #5f676c;
+    
+}
+.lp{
+    width: 55px;
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #5f676c;
+   
+}
+.lp ,.up, .ltp, .rt, .tp, .rtp{
+    box-shadow: 3px 3px black inset;
+}
+
+input, button{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+  color: rgb(211, 199, 199);
+}
+
+
+input:active,  button:active{
+    transform: scale(.9);
+}
+
+.lp.rv{
+    background-color: #762a5b !important;
+}
+
+sup{
+    font-size: 10px;
+}
+
+.up.fs{
+    font-size: 13px;
+}
+
+#CanvasOfGeeks{
+position: absolute;
+top: 100px;
+left:300px;
+z-index: 1000;
+}
+
+
+svg{
+    position: absolute;
+    top: -267px;
+    left: -74px;
+    z-index: 100;
+}
+
+
+.mode, .alpha, .shift, .off{
+    position: absolute;
+    color: white;
+    top: 244px;
+    font-size: 8px;
+    font-family: sans-serif;
+
+}
+
+.off{
+    right:37px;
+}
+.alpha{
+    left: 89px;
+}
+.mode{
+    right: 91px;
+}
+.shift{
+    left: 32px;
+}
+
+.tri {
+    width: 0;
+    height: 0;
+    border-top-width: 7px;
+    border-top-style: solid;
+    border-top-color: transparent;
+    border-right-width: 7px;
+    border-right-style: solid;
+    border-right-color: white;
+    
+    position: absolute;
+ 
+  }
+  .tri.on{
+    top: 250px;
+    left: 164px;
+    transform: rotate(137deg);
+  }
+
+  .tri.to{
+    top: 250px;
+    right: 164px;
+    transform: rotate(315deg);
+  }

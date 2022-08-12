@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="inside-flex">
+              <form action="" name="calc">
+                <div class="screen">
+                    
+                    <div class="lens" > </div>
+                    <p class="txtLens">TWO WAY POWER</p>
+                    <p class="sc">SCIENTIFIC CALCULATOR</p>
+                    <p class="logo">ANUSH</p>      
+                    <p class="mode">MODE</p>   
+                    <p class="shift">SHIFT</p>   
+                    <p class="alpha">ALPHA</p>   
+                    <p class="off">OFF</p>  
+                    <div class="tri on"></div> 
+                    <div class="tri to"></div> 
+                    <svg height="400" width="300">
+
+                        <path d="M 100 350 q 130 -60 200 0" style="stroke: #4c5156" stroke-width="4" fill="none" />
+                      </svg>     
+                    <input id="calScreen" type="text" name="answer">
+                </div>
+
+               
+                <div class="btnIN">
+                    <div class="row"> 
+                        <input type="button" class="tp" value="">
+                        <input type="button" class="tp" value="">
+                        <input type="button" class="ltp" value="">
+                        <input type="button" class="rtp" value="">
+                        <input type="button" class="tp" value="">
+                        <input type="button" class="tp" value="">
+                    </div>
+                    <div class="row"> 
+                       
+                        <button class="up">X <sup>y</sup></button>
+                        <button class="up"> &radic;<span style="text-decoration: overline"><span style="color:#44494c">..</span></span></button>
+                       
+                        <input class="up" type="button" value="FIX">
+                        <input class="up" type="button" value="SCI">
+                        <input class="up" type="button" value="DRG">
+                        <input class="up fs" type="button" value="DHBO">
+                       
+                    </div>
+                    <div class="row"> 
+                        <input class="up" type="button" value="hyp">
+                        <input class="up" type="button" value="ab/c">
+                        <input class="up" type="button" value="FMLA">
+                        <input class="up" type="button" value="CALC">
+                        <input class="up" type="button" value="(-)">
+                        <input class="up" type="button" value="BS">
+                       
+                    </div>
+                    <div class="row"> 
+                        <input class="up" type="button" value="sin">
+                        <input class="up" type="button" value="cos">
+                        <input class="up" type="button" value="tan">
+                        <input class="up" type="button" value="DM'S">
+                        <input class="up" type="button" value="log">
+                        <input class="up" type="button" value="ln">
+                       
+                    </div>
+                    <div class="row"> 
+                        <button class="up">X <sup>2</sup></button>
+                        <input class="up" type="button" value="(">
+                        <input class="up" type="button" value=")">
+                        <input class="up" type="button" value="STO">
+                        <input class="up" type="button" value="DATA">
+                        <input class="up" type="button" value="M+">
+                       
+                    </div>
+                     
+                    
+                    <div class="row"> 
+                        <input type="button" class="lp" value="7" onclick = "calc.answer.value += '7' ">
+                        <input type="button" class="lp" value="8" onclick = "calc.answer.value += '8' ">
+                        <input type="button" class="lp" value="9" onclick = "calc.answer.value += '9' ">
+                        <input type="button"  class="lp rv" value="C" onclick = "calc.answer.value  = Math.floor(calc.answer.value/10) ">
+                        <input type="button" class="lp rv" value="AC" onclick = "calc.answer.value = '' ">
+                   </div>
+
+                    <div class="row"> 
+                        <input type="button" class="lp" value="4" onclick = "calc.answer.value += '4' ">
+                        <input type="button" class="lp" value="5" onclick = "calc.answer.value += '5' ">
+                        <input type="button" class="lp" value="6" onclick = "calc.answer.value += '6' ">
+                        <input type="button" class="lp" value="X" onclick = "calc.answer.value += '*' ">
+                        <input type="button" class="lp" value="/" onclick = "calc.answer.value += '/' ">
+                   </div>
+                    
+                   <div class="row"> 
+                        <input type="button" class="lp" value="1" onclick = "calc.answer.value += '1' ">
+                        <input type="button" class="lp" value="2" onclick = "calc.answer.value += '2' ">
+                        <input type="button" class="lp" value="3" onclick = "calc.answer.value += '3' ">
+                        <input type="button" class="lp" value="+" onclick = "calc.answer.value += '+' ">
+                        <input type="button" class="lp" value="-" onclick = "calc.answer.value += '-' ">
+                    </div>
+
+                    <div class="row"> 
+                        <input type="button" class="lp" value="0" onclick = "calc.answer.value += '0' ">
+                        <input type="button" class="lp" value="." onclick = "calc.answer.value += '.' ">
+                        <input type="button" class="lp" value="EXP" onclick = "">
+                        <input type="button" class="lp" value="DEL" onclick = "">
+                        <input type="button" class="lp" value="=" onclick = "calc.answer.value =  eval(calc.answer.value) ">
+                    </div>
+                   
+                   
+                </div>
+              </form>
+
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>
