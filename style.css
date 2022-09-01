@@ -45,7 +45,12 @@ letter-spacing: 2px;
 color: black;
 opacity: 80%;
 font-size: 20px;
-transform: none !important;
+
+}
+
+#calScreen:hover{
+
+transform:scale(2) !important;
 
 }
 .row{
